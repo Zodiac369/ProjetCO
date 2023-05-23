@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeux de cartes de notre formation DWWM-PE7.">
+    <link rel="shortcut icon" type=".png" href="./Img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    
+    <title>Projet collectif</title>
+  </head>
+  <body>
+    <header> <!-- menu burger -->
+      <div class="collapse bg-black" id="navbarHeader">
+        <div class="container-head">
+          <div class="col-head">
+            <h4 class="text-white">Agenda des événements</h4>
+            <a href="./Login_PHP/login.php">
+              <button class="btn text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                  <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                  <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>
+                <i class="bi bi-calendar3 me-2"></i> Se connecter
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-black shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img class="icon-title" src="./Img/logo.png" width="45" alt="Icone Jocker">
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <!-- section title -->
+      <section class="head text-center container-fluid bg-black">
+        <div class="row">
+          <div class="clown ">
+            <img src="./Img/clown.png" alt="" class="">
+          </div>
+        </div>
+      </section>
+
+      <!-- pioche carte -->
+      <div class="container-fluid pioche-carte bg-black">
+        <div class="left"></div>
+        <div class="title">PIOCHE UNE CARTE</div>
+        <div class="right" ></div>
+      </div>
+
+
+      <!-- list avatar -->
+      <section class="list-avatar container-fluid flex-column bg-black">
+        <!-- elements du fond -->
+        <div class="el">
+          <div class="el1">
+            <img src="./Img/el1.png" alt="" class="bg-el">
+          </div>
+
+          <div class="el2">
+            <img src="./Img/el2.png" alt="" class="bg-el">
+          </div>
+
+          <div class="el3">
+            <img src="./Img/el3.png" alt="" class="bg-el">
+          </div>
+
+          <div class="el4">
+            <img src="./Img/el4.png" alt="" class="bg-el">
+          </div>
+        </div>
+     
+
+        <!-- ligne 1 -->
+        <div class="row">
+          <div class="col card-reto-verso modal-body" data-bs-toggle="modal" >
+              <img src="./Img/back-red.png" alt="verso-rouge" class="shadow-red reto">
+              <a href="#display-info" class="lien">
+                <img src="./Img/antoine.png" alt="avatar-antoine" class="verso" 
+                     onclick="showInfo('Antoine', 'DELABRE', '24', 'antoine.png')" 
+                     data-latitude="46.0384"  
+                     data-longitude="4.454">
+              </a>   
+          </div> 
+        </div> 
+
+        <!-- ligne 2 -->
+        <div class="row">
+          <div class="col card-reto-verso">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/aya.png" alt="avatar-aya" class="verso" 
+                   onclick="showInfo('Aya', 'BENMAKHLOUF', '23', 'aya.png')"
+                   data-latitude="36.362" 
+                   data-longitude="6.635">
+            </a>
+          </div>
+
+          <div class="col card-reto-verso">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/angelo.png" alt="avatar-angelo" class="verso" 
+                  onclick="showInfo('Angélo', 'FERNANDEZ', '19', 'angelo.png')"
+                  data-latitude="-0.181"  
+                  data-longitude="-78.460"   
+                  >
+            </a>
+          </div>
+
+          <div class="col card-reto-verso">
+              <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+              <a href="#display-info" class="lien">
+                <img src="./Img/clency.png" alt="avatar-clency" class="verso" 
+                     onclick="showInfo('Clency', 'LOUISY-JOSEPH', '26', 'clency.png')"
+                     data-latitude="34.061"  
+                     data-longitude="-118.219"
+                     > 
+              </a>
+          </div>
+        </div>
+        
+        <!-- ligne 3 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/clement.png" alt="avatar-clement" class="verso" 
+                   onclick="showInfo('Clément', 'CHARRASSIER', '25', 'clement.png')"
+                   data-latitude="46.891"  
+                   data-longitude="-71.333">
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/damien.png" alt="avatar-damien" class="verso" 
+                   onclick="showInfo('Damien', 'DUBOST', '24', 'damien.png')"
+                   data-latitude="46.0384"  
+                   data-longitude="4.454"
+                   >
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 4 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/emre.png" alt="avatar-emre" class="verso" 
+                   onclick="showInfo('Emre', 'AYDOGAN', '24', 'emre.png')"
+                   data-latitude="36.897"  
+                   data-longitude="30.721"
+                    >
+            </a>
+
+          </div>
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="#display-info" class="lien">
+            <img src="./Img/florian.png" alt="avatar-florian" class="verso" 
+                 onclick="showInfo('Florian', 'MOREL', '27', 'florian.png')"
+                 data-latitude="38.184"  
+                 data-longitude="15.461"
+                 >
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/ghazi.png" alt="avatar-ghazi" class="verso" 
+                   onclick="showInfo('Ghazi', 'ELJORF', '37', 'ghazi.png')"
+                   data-latitude="-41.281"  
+                   data-longitude="174.745"
+                   >
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 5 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto"> 
+            <a href="#display-info" class="lien">
+              <img src="./Img/hristina.png" alt="avatar-hristina" class="verso"
+                   onclick="showInfo('Hristina', 'STANKOvA', '33', 'hristina.png')"
+                   data-latitude="42.704"  
+                   data-longitude="23.329"
+                   >
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/khaoula.png" alt="avatar-kevin" class="verso" 
+                   onclick="showInfo('Khaoula', 'OUACHANI', '23', 'khaoula.png')"
+                   data-latitude="33.808"  
+                   data-longitude="10.846"
+                   >
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 6 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+            <img src="./Img/kevin.png" alt="avatar-khaoula" class="verso" 
+                 onclick="showInfo('Kevin', 'MUZIAK', '29', 'kevin.png')"
+                 data-latitude="47.903"  data-longitude="106.904"
+                 >
+            </a>
+          </div> 
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="#display-info" class="lien">
+            <img src="./Img/meijuan.png" alt="avatar-meijuan" class="verso" 
+                 onclick="showInfo('Meijuan', 'LU', '33', 'meijuan.png')"
+                 data-latitude="38.921"  
+                 data-longitude="121.614"
+                 >
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/nohe.png" alt="avatar-nohe" class="verso" 
+                   onclick="showInfo('Nohe', 'BIBIMOUNE', '36', 'nohe.png')"
+                   data-latitude="34.004"  
+                   data-longitude="36.211"
+                   >
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 7 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/rayan.png" alt="avatar-rayan" class="verso" 
+                   onclick="showInfo('Rayan', 'QUESSADA', '20', 'rayan.png')"
+                   data-latitude="38.906"  data-longitude="1.420"
+                   >
+            </a>
+          </div>
+
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-red.png" alt="" class="shadow-red reto">
+            <a href="#display-info" class="lien">
+              <img src="./Img/yanis.png" alt="avatar-yanis" class="verso" 
+                   onclick="showInfo('Yanis', 'BENYOUCEF', '20', 'yanis.png')"
+                   data-latitude="16.506"  
+                   data-longitude="-151.746"
+                   >
+            </a>
+          </div>
+        </div>
+
+        <!-- ligne 8 -->
+        <div class="row">
+          <div class="col card-reto-verso ">
+            <img src="./Img/back-blue.png" alt="" class="shadow-blue reto">
+            <a href="./JS/jeux/EasterEgg.html" class="lien">
+              <img src="./Img/card-blason.png" alt="carte-surprise" class="verso" >
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- carte personnelle -->
+    <div class="container-fluid carte-personnelle bg-black ">
+      <div class="row d-flex flex-wrap">
+        <div class="col">
+          <div id="display-info" class="row d-flex justify-content-center"></div>
+        </div> 
+
+        <div id="map" class="col"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2023 Human Booster - Tous droits réservés</p>
+      
+          <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="./Img/logo.png" alt="logo-jocker" class="square" height="60">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mentions légales</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"> <img src="https://cdn-icons-png.flaticon.com/512/17/17507.png" alt="flèche retour en haut" width="45"></a></li>
+          </ul>
+        </footer>
+      </div>
+
+    <script src="./JS/index.js"></script>
+    <script src="./JS/info.js"></script>
+    <script src="./JS/map.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI2uSAf3RwAdhsiZ0jzISVAc4y9WrfhbA&callback=initMap"
+    async></script>
+  </body>
+</html>

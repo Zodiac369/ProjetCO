@@ -1,0 +1,143 @@
+/* liste des cartes avatar */
+.list-avatar {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 30px;
+}
+
+.list-avatar .row .col {
+  color: white;
+  text-align: center;
+  cursor: help;
+  margin: 50px;
+  padding: 65px;
+}
+
+.list-avatar .shadow-red {
+  box-shadow: inset 0 0 1em , 0 0 6em red;
+}
+
+.list-avatar .shadow-blue {
+  width:229px;
+  height: 354px;
+  box-shadow: inset 0 0 1em , 0 0 6em #0000AB;
+}
+
+
+
+  
+/* card reto-verso */
+.card-reto-verso {
+  width: 230px;
+  height: 354px;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+}
+
+.card-reto-verso img{
+  border-radius: 9px;
+  position: absolute;
+  backface-visibility:hidden;
+  transition: 2s;
+}
+
+.card-reto-verso .verso{
+  transform: rotateY(180deg);
+}
+
+.card-reto-verso:hover .verso{
+  transform: rotateY(0deg);
+}
+
+.card-reto-verso:hover .reto{
+  transform: rotateY(-180deg);
+}
+
+.lien{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* élément du fond */
+.el{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.el1,
+.el2,
+.el3,
+.el4{
+  position:absolute;
+}
+
+.bg-el{
+  width: 20vw;
+  height:25vw;
+  object-fit: cover;
+}
+
+.el1{
+  left:0;
+  top:1900px;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+
+.el2{
+  right:0;
+  top:2500px;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+.el3{
+  right:0;
+  top:100px;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+.el4{
+  left:0;
+  top:700px;
+  opacity: 0.5;
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+	        animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

@@ -1,0 +1,130 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+  padding:  5px 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* menu header */
+.col-head, .text-white {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.text-muted {
+  font-size: 14px;
+}
+
+.icon-title {
+  margin: 2px;
+}
+
+/* section head */
+.head{
+  background: url(../Img/fond-carte.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+}
+
+.head .clown img{
+  width: 32vw;
+  height: 35vw;
+
+}
+
+.bi-bi-person-circle {
+    color: blue;
+    margin: 2px;
+}
+
+/* PIOCHE UNE CARTE */
+.pioche-carte {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+.left {
+  position: absolute;
+  border: 3px solid red;
+  top:0;
+  width: 40%;
+  right: 0;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 6vw;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: "CloisterBlack", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.right {
+  position: absolute;
+  border: 3px solid #0000AB;
+  width: 40%;
+  left: 0;
+  bottom:0;
+}
+
+.title-animate{
+  -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-expand-fwd 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
